@@ -41,7 +41,7 @@ source "vsphere-iso" "this" {
     disk_thin_provisioned = true
   }
 
-  iso_paths = ["[vsanDatastore] ISO/ubuntu-22.04.1-live-server-amd64.iso"]
+  iso_paths = ["[IRNAS4-NFS] ubuntu-22.04.1-live-server-amd64.iso"]
 
   network_adapters {
     network = var.network_name
@@ -60,6 +60,9 @@ build {
   ]
 
   provisioner "shell-local" {
-    inline = ["echo the address is: $PACKER_HTTP_ADDR and build name is: $PACKER_BUILD_NAME"]
+    inline = [
+      "echo the address is: $PACKER_HTTP_ADDR and build name is: $PACKER_BUILD_NAME",
+      "sudo apt-get update"
+    ]
   }
 }
