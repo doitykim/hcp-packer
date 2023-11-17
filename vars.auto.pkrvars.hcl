@@ -1,0 +1,7 @@
+vsphere_server = "127.0.0.1:8989"
+vsphere_user = "administrator@vsphere.local"
+vsphere_password = "Vmware!0"
+datacenter = "DC0"
+cluster = "DC0_C0"
+datastore = "IRNAS4-NFS"
+network_name = "net=int"
