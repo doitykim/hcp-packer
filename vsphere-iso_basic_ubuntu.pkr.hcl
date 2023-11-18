@@ -9,15 +9,15 @@ source "vsphere-iso" "this" {
   cluster             = var.cluster
   insecure_connection = true
 
-  vm_name       = "tf-edu-ubuntu"
+  vm_name       = "yhkim-tf-ubuntu"
   guest_os_type = "ubuntu64Guest"
 
   CPUs            = 2
   RAM             = 2048
   RAM_reserve_all = true
 
-  ssh_username = "ubuntu"
-  ssh_password = "ubuntu"
+  ssh_username = "iradmin"
+  ssh_password = "vmware!0"
   ssh_timeout  = "30m"
 
   /* Uncomment when running on vcsim
@@ -61,8 +61,7 @@ build {
 
   provisioner "shell-local" {
     inline = [
-      "echo the address is: $PACKER_HTTP_ADDR and build name is: $PACKER_BUILD_NAME",
-      "sudo apt-get update"
+      "echo the address is: $PACKER_HTTP_ADDR and build name is: $PACKER_BUILD_NAME"
     ]
   }
 }

@@ -2,9 +2,9 @@
 autoinstall:
   version: 1
   identity:
-    hostname: ubuntu-server
-    password: "$6$exDY1mhS4KUYCE/2$zmn9ToZwTKLhCw.b4/b.ZRTIZM30JZ4QrOQ2aOXJ8yk96xpcCof0kxKwuX1kqLG/ygbJ1f8wxED22bTL4F46P0"
-    username: ubuntu
+    hostname: ubt-2204
+    password: "$6$x16wU3bQlwf8tvvo$7UofzDJ4GoAwz0155/RDnqFVjgoeF9CgN.m2zO0CkTPaqfNB5QaIuZtKHqsbpQdJnsqVSK6Z5FnbTC8bWRcpb/"
+    username: iradmin
   ssh:
     install-server: true
     allow-pw: true
