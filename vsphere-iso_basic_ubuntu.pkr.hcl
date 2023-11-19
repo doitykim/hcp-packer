@@ -9,7 +9,7 @@ source "vsphere-iso" "this" {
   cluster             = var.cluster
   insecure_connection = true
 
-  vm_name       = "yhkim-tf-ubuntu"
+  vm_name       = "tmpl-ubt-2204-tf"
   guest_os_type = "ubuntu64Guest"
 
   CPUs            = 2
